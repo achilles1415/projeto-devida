@@ -1,18 +1,18 @@
 @import url(https://fonts.google.com/share?selection.family=Fredoka:wght@300..700);
-
+/*DECLARANDO VARIÁVEIS*/
 ;root{
-    --cor-de-fundo: #26fa09;
-    --verde: #8a0303;
+    --cor-de-fundo: #fd0000;
+    --verde: #0763ad;
     --branco: #ffffff;
-    --botao-ativo: #2416e9;
-    --botao-inativo: rgba(143, 143, 145, 0.5);
-    --texto-fundo: rgb(2, 2, 2);
+    --botao-ativo: #66ff00;
+    --botao-inativo: rgba(245, 0, 151, 0.774);
+    --texto-fundo: rgb(0, 0, 0);
 }
-
+/**/
 body{
-    background-color: var(--cor-de-fundo);
+    background-color: var(--cor-de-fundo);/**/
     color: var(--branco);
-    font-family: 
+    font-family: "Fredoka", sans-serif;
 }
 
 .conteudo-principal{
@@ -37,7 +37,7 @@ body{
 }
 
 .botao{
-    font-family: ;
+    font-family: "Fredoka", sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -110,7 +110,7 @@ body{
     margin: 0;
 }
 
-@media screen (min-width: 768px) {
+@media screen (min-width: 768px){
     .botoes{
         display: flex;
     }
