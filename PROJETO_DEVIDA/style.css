@@ -1,21 +1,23 @@
-@import url(https://fonts.google.com/share?selection.family=Fredoka:wght@300..700);
-/*DECLARANDO VARIÁVEIS*/
-;root{
-    --cor-de-fundo: #fd0000;
-    --verde: #0763ad;
-    --branco: #ffffff;
-    --botao-ativo: #66ff00;
-    --botao-inativo: rgba(245, 0, 151, 0.774);
-    --texto-fundo: rgb(0, 0, 0);
-}
-/**/
-body{
-    background-color: var(--cor-de-fundo);/**/
-    color: var(--branco);
-    font-family: "Fredoka", sans-serif;
+/*aula1- ESTRUTURANDO O SITE*/
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+:root {
+    --cor-de-fundo: #580000;
+    --verde: #eeff00;
+    --branco: #FFFFFF;
+    --botao-ativo: #c00909;
+    --botao-inativo: rgba(0, 0, 0, 0.788);
+    --texto-fundo: rgb(255, 40, 40);
 }
 
-.conteudo-principal{
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
+.conteudo-principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,19 +27,19 @@ body{
     margin: 0 auto;
 }
 
-.titulo-principal{
+.titulo-principal {
     text-align: left;
     width: 100%;
     font-size: 32px;
-
 }
 
-.titulo-principal span{
+.titulo-principal span {
     color: var(--verde);
 }
 
-.botao{
-    font-family: "Fredoka", sans-serif;
+
+.botao {
+    font-family: 'Chakra Petch', sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -47,16 +49,16 @@ body{
     align-items: center;
     width: 100%;
     border-bottom: 4px solid var(--botao-ativo);
-    border-left: 4px solid var(--botao-ativo);
-    border-right: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
     border-top: none;
-}   
+}
 
-.botao:first-child{
+.botao:first-child {
     border-radius: 40px 40px 0 0;
 }
 
-.botoes{
+.botoes {
     display: block;
 }
 
@@ -70,20 +72,18 @@ body{
     padding: 40px;
     border-radius: 0 0 40px 40px;
 }
-
 .aba-conteudo.ativo{
-    display: block;
+    display:block;
 }
 
 .aba-conteudo{
     display: none;
 }
 
-.aba-conteudo-titulo-prinipal{
+.aba-conteudo-titulo-principal{
     font-size: 28px;
     text-align: center;
 }
-
 .aba-conteudo-titulo-secundario{
     text-align: center;
     color: var(--verde);
@@ -91,7 +91,7 @@ body{
 }
 
 .contador{
-    display: flex;
+    display:flex;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -100,24 +100,28 @@ body{
     text-align: center;
     min-width: 100px;
 }
+
 .contador-digito-numero{
     font-size: 80px;
     margin: 0;
+
 }
+
 .contador-digito-texto{
     color: var(--verde);
     font-size: 20px;
     margin: 0;
+
 }
 
-@media screen (min-width: 768px){
-    .botoes{
+@media screen and (min-width: 768px) {
+    .botoes {
         display: flex;
     }
-    .botao:first-child{
+
+    .botao:first-child {
         border-radius: 40px 0 0 0;
     }
-    .botao:last-child{
-        border-radius: 0 40px 0 0;
-    }
-}
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0; }
